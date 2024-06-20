@@ -1,0 +1,13 @@
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-nav a{
+    text-decoration: none!important;
+}
