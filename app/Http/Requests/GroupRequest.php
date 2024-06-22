@@ -40,9 +40,9 @@ class GroupRequest extends FormRequest
             'users.*' => 'exists:users,id',
         ];
 
-        if ($this->route()->methods()[0] === 'PUT'){
+        /*if ($this->route()->methods()[0] === 'PUT'){
             $rules['users'] = 'required|array|min:1';
-        }
+        }*/
 
 
         return $rules;

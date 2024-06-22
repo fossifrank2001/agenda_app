@@ -21,7 +21,7 @@
                         <img src="{{asset('assets/images/profile/user-1.jpg')}}" alt="" width="35" height="35" class="rounded-circle">
                         <span class="mb-0 fs-3 ms-3">
                             @auth
-                                {{ auth()->user()->name }}
+                                {{ auth()->user()?->name }}
                             @endauth
                         </span>
                     </a>

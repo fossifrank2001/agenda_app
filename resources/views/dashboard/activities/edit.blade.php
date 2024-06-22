@@ -33,7 +33,7 @@
                                     <x-forms.input id="name" label="Name*" type="text" :value="$activity->name" required/>
                                 </div>
                                 <div class="col-xs-12 col-md-4">
-                                    <x-forms.input id="place" label="Place*" type="text" :value="$activity->place" required/>
+                                    <x-forms.input id="place" label="Place" type="text" :value="$activity->place"/>
                                 </div>
                                 <div class="col-xs-12 col-md-4">
 {{--                                    @dd($activity->group_id)--}}

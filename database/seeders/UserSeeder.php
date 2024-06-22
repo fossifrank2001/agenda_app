@@ -13,6 +13,11 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->count(10)->create();
+        $user = new User();
+        $user->name = 'FASSEU Steve';
+        $user->email = 's.fasseu@gmail.com';
+        $user->password = 'Agenda@2024';
+        $user->role = User::ADMIN;
+        $user->save();
     }
 }

@@ -28,7 +28,7 @@
                                             <x-forms.input id="name" label="Name*" type="text" :value="old('name')" required/>
                                         </div>
                                         <div class="col-xs-12 col-md-4">
-                                            <x-forms.input id="place" label="Place*" type="text" :value="old('place')" required/>
+                                            <x-forms.input id="place" label="Place" type="text" :value="old('place')" />
                                         </div>
                                         <div class="col-xs-12 col-md-4">
                                             <div class="mb-3">

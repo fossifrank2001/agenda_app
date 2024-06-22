@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/code/jquery.datetimepicker.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}" />
+    <style type="text/css">
+
+        .left-sidebar.hidde{
+            left: -270px!important;
+        }
+    </style>
 </head>
 <body>
 <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -21,7 +27,7 @@
     @include('partials.aside')
     <div class="body-wrapper bg-light min-vh-100">
         @include('partials.header')
-        <div class="container-fluid d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column justify-content-between" style="padding-top: 100px!important;">
             @yield('content')
             @include('partials.footer')
         </div>
@@ -58,6 +64,12 @@
      */
 @endphp
     <script>
+        /*const btn_switcher = document.querySelector('.app-header .sidebar-switcher');
+        const left_side = document.querySelector('.left-sidebar')
+
+        btn_switcher.addEventListener('click', (e) => {
+            left_side.classList.toggle('hidde')
+        })*/
 
         $(document).ready(function() {
             // Variables PHP pour les valeurs de start_time et end_time de la ressource
@@ -105,6 +117,7 @@
                 }
             });
         });
+
         $('#descriptions').summernote({
             placeholder: 'Enter description',
             tabsize: 2,
